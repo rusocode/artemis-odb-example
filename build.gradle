@@ -1,0 +1,39 @@
+apply plugin: "java"
+apply plugin: "artemis"
+
+buildscript {
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+        maven { url "https://plugins.gradle.org/m2/" }
+        // Contiene dependencias para el complemento artemis gradle
+        jcenter()
+        google()
+    }
+    dependencies {
+        // lib for artemis-odb weaving.
+        // see https://github.com/junkdog/artemis-odb/wiki/Bytecode-weaving
+        classpath "net.onedaybeard.artemis:artemis-odb-gradle-plugin:2.2.0"
+    }
+
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    compile "net.onedaybeard.artemis:artemis-odb:2.2.0"
+}
+
+test {
+    useJUnitPlatform()
+}

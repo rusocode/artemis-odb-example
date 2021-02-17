@@ -1,0 +1,6 @@
+my/game/components/Hello.java
+ my.game.components.Hello
+my/game/GameLauncher.java
+ my.game.GameLauncher
+my/game/systems/HelloWorldSystem.java
+ my.game.systems.HelloWorldSystem

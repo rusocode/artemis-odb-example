@@ -22,6 +22,7 @@ public class HelloWorldSystem extends IteratingSystem {
 	// Llamado para cada entidad coincidente
 	@Override protected void process(int id) {
 		System.out.print(mHello.get(id).message);
+
 	}
 
 }

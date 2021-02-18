@@ -19,6 +19,9 @@ public class GameLauncher {
 
 		// 4. Ejecuta el mundo. HelloWorldSystem deberia imprimir el mensaje de hola mundo.
 		world.process();
+
+		// Inyecta explicitamente un objeto
+		// world.inject(obj);
 	}
 
 }

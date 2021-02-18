@@ -10,9 +10,15 @@ import my.game.components.Hello;
 // Los sistemas de iteracion (IteratingSystem) operan sobre entidades que coinciden con un determinado Aspecto
 public class HelloWorldSystem extends IteratingSystem {
 
-	protected ComponentMapper<Hello> mHello;
+	/**
+	 * Artemis-odb maneja la mayoria de la creacion de objetos por usted. Inyectara sistemas, mapeadores de componentes o cualquier otro objeto deseado en
+	 * los sistemas de entidad, durante la inicializacion.
+	 */
+	protected ComponentMapper<Hello> mHello; // Utilizado para acceder al componente
 
+	// Llamado para cada entidad coincidente
 	@Override protected void process(int id) {
 		System.out.print(mHello.get(id).message);
 	}
+
 }

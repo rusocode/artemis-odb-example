@@ -16,7 +16,8 @@ buildscript {
     dependencies {
         // lib for artemis-odb weaving.
         // see https://github.com/junkdog/artemis-odb/wiki/Bytecode-weaving
-        classpath "net.onedaybeard.artemis:artemis-odb-gradle-plugin:2.2.0"
+        // classpath "net.onedaybeard.artemis:artemis-odb-gradle-plugin:2.2.0"
+        classpath "net.onedaybeard.artemis:artemis-odb-gradle-plugin:2.3.0" // fix bugs
     }
 
 }
@@ -31,7 +32,7 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
-    compile "net.onedaybeard.artemis:artemis-odb:2.2.0"
+    compile "net.onedaybeard.artemis:artemis-odb:2.3.0"
 }
 
 test {

@@ -13,6 +13,9 @@ public class HelloWorldSystem extends IteratingSystem {
 	/**
 	 * Artemis-odb maneja la mayoria de la creacion de objetos por usted. Inyectara sistemas, mapeadores de componentes o cualquier otro objeto deseado en
 	 * los sistemas de entidad, durante la inicializacion.
+	 * <p>
+	 * Los mapeadores de componentes proporcionan acceso y mutacion de componentes de alto rendimiento desde dentro de un sistema. Los
+	 * mapeadores de componentes son tan rapidos como los transmutadores.
 	 */
 	protected ComponentMapper<Hello> mHello; // Utilizado para acceder al componente
 

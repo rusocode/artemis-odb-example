@@ -1,8 +1,18 @@
-## Gradle
+# Project-Specific
+build/
+
+# Gradle
 .gradle/
 **/gradle.properties
 
-## Intellij
+### Eclipse ###
+.metadata
+bin/
+.settings/
+.project
+.classpath
+
+# Intellij
 *.iws
 .idea/
 *.iml

@@ -1,4 +1,8 @@
-# Intellij
+## Gradle
+.gradle/
+**/gradle.properties
+
+## Intellij
 *.iws
 .idea/
 *.iml

@@ -7,11 +7,11 @@ import my.game.systems.HelloWorldSystem;
 public class GameLauncher {
 
 	public static void main(String[] args) {
-		// 1. Registra cualquier complemento, configura el mundo.
-		WorldConfiguration setup = new WorldConfigurationBuilder().with(new HelloWorldSystem()).build();
+		// 1. Configura el mundo
+		WorldConfiguration config = new WorldConfigurationBuilder().with(new HelloWorldSystem()).build();
 
-		// 2. Crea el mundo.
-		World world = new World(setup);
+		// 2. Crea el mundo y le pasa la configuracion
+		World world = new World(config);
 
 		// 3. Crea la entidad. Se puede hacer aca o dentro de los sistemas.
 		int entityId = world.create();

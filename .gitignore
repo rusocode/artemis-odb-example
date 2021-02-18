@@ -1,3 +1,5 @@
+## Si por algun motivo los archivos excluidos en .gitignore no se excluyen, entonces pruebe desde la consola de git con el comando
+## 'git rm --cached file -r', para eliminar los archivos del indice que git ya tiene registrado.
 # Project-Specific
 build/
 
